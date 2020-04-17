@@ -37,16 +37,13 @@ read your_branch
 echo
 echo
 
-# Check if remote exists, if so, skip adding remote
-# List remotes and check if desired remote already exists
-
 # Make remotes array
 IFS=$'\n' read -r -d '' -a remotes < <( git remote && printf '\0' )
 
 # print all remotes on separate lines
 printf -- "%s\n" "${remotes[@]}"
 
-# If the remote exists skip adding the remote. If it doesn't exist and the remote.
+# If the remote exists skip adding the remote. If it doesn't exist add the remote.
 if [[ " ${remotes[@]} " =~ " ${user_name} " ]]; then
   echo "Remote already exists. Fetching branch…"
 else

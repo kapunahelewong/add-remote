@@ -22,15 +22,16 @@ This script helps you create a remote to a contributor's fork of the Angular rep
   Since `patch-1` is a common branch name, you might like to refer to it in a way that differentiates it from other `patch-1` branches.
   While you could call it `patch-1`, You could also call it something different such as `kw-patch-1` or `kapunahele-patch-1`.
 
+  Here's a screenshot of me answering these questions with these example answers:
   ![Image of Add Remote](add-remote.png)
 
 ### Get your changes up to GitHub
 
 When you're done editing, amending a commit, or rebasing use `git push` to update the PR.
 If you have used a unique name for the local version of the branch, git will give you an option of two commands.
-Use the first command which is as follows:
+Use the first command which be like this in our case:
 
 ```bash
-git push <user handle> HEAD:<real branch name on github>
+git push kapunahelewong HEAD:patch-1
 ```
 
