@@ -14,7 +14,7 @@ This script helps you create a remote to a contributor's fork of the Angular rep
 ### Add Remote prompts you for three things:
 
 1. The user's GitHub handle.
-  For example, mine is `kapunahelewong`
+  For example, mine is `kapunahelewong`.
 1. The name of the person's branch as it appears on their fork.
   For example, in this URL: `https://github.com/kapunahelewong/angular/tree/patch-1`, my branch name is `patch-1`.
   You can see this in their PR under the PR title; for example, `kapunahelewong:patch-1`.
@@ -26,7 +26,7 @@ When you're done editing, amending a commit, or rebasing use `git push` to updat
 If you have used a unique name for the local version of the branch, get will give you an option of two commands.
 Use the first command which is as follows:
 
-```sh
+```bash
 git push <user handle> HEAD:<real branch name on github>
 ```
 
