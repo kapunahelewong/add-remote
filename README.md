@@ -35,3 +35,4 @@ Use the first command which be like this in our case:
 git push kapunahelewong HEAD:patch-1
 ```
 
+Thanks to @gkalpak for teaching me how to checkout contributor branches! 🌟
